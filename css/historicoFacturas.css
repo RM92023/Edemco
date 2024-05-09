@@ -1,0 +1,135 @@
+.titulo {
+    padding: 2px 90px;
+    background-color: #F8F9FA;
+    color: white;
+}
+.descripcion{
+    text-align: center;
+    color: #D9D9D9;
+}
+
+#seleccionar-cliente {
+    width: 250px; 
+    padding: 10px; 
+    font-size: 16px; 
+    text-align: center;
+    border: 2px solid #A6A6A6; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: #A6A6A6; 
+    cursor: pointer; 
+    margin-left: 700px;
+}
+
+#fecha {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #A6A6A6;
+    color: #A6A6A6;
+    margin-left: 520px;
+}
+
+.form-control{
+    color: #A6A6A6;
+    text-align: center;
+}
+
+.selector{
+    display: flex;
+    align-items: center;
+}
+
+.btnBuscar {
+    background: linear-gradient(#7CB05E,#8DC63F);
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 690px;
+}
+
+.btnBuscar:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+.tabla {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-left: 150px;
+}
+
+.tabla th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: #A6A6A6;
+}
+
+.tabla td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla .pdf-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#tablaCliente {
+    display: none;
+}
+
+.descargaPDF{
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.btn-back button{
+
+    position: fixed;
+    background-color: #D9D9D9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    text-align: center;
+    border: #D9D9D9;
+    margin-top: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+    bottom: 40px;
+}
+
+.btn-back button:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+@media (min-width: 767px) {
+
+    .descripcion{
+        margin-left: 10px;
+    }
+    .btnBuscar {
+      width: 200px;
+      margin-left: 860px;
+    }  
+}
+
+@media(max-width: 1880px){
+
+    .descripcion{
+        margin-left: 15PX;
+    }
+
+    .btnBuscar {
+        width: 200px;
+        margin-left: 675px;
+    }
+}

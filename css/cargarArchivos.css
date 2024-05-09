@@ -1,0 +1,116 @@
+.titulo {
+    padding: 2px 90px;
+    background-color: #F8F9FA;
+    color: white;
+}
+.descripcion{
+    text-align: center;
+    color: #D9D9D9;
+}
+
+.btnSubir {
+    background: linear-gradient(#7CB05E,#8DC63F);
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnSubir:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+.btn-back button{
+
+    position: fixed;
+    background-color: #D9D9D9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    text-align: center;
+    border: #D9D9D9;
+    margin-top: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+    bottom: 40px;
+}
+
+.btn-back button:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subir-archivos{
+    border: 3px dashed #E9ECEF;
+    color: #D9D9D9;
+    height: 230px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.indicador{
+    text-align: center;
+    color: #A6A6A6;
+}
+
+.subir-archivos.active{
+    background-color: #D9D9D9;
+    color: #A6A6A6;
+    border: 2px dashed #D9D9D9;
+}
+
+#vista-previa {
+    background-color: #f5f5f5;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px; 
+    margin-left: 655px;
+    width: 600px;
+    height: 50px;
+    display: none;
+    overflow: auto
+}
+
+.btnAutomatizar {
+    background: linear-gradient(#7CB05E,#8DC63F);
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 885px;
+}
+
+.btnAutomatizar:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+  
+
+@media (min-width: 767px) {
+
+    .subir-archivos{
+        margin-left: 763px;
+    }  
+}
+
+@media(max-width: 1880px){
+
+    .subir-archivos{
+        margin-left: 570px;
+    }
+}
+

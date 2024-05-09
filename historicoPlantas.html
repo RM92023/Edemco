@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Historico por plantas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/historicoPlantas.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/historicoPlantas.js"></script>
+</head>
+<body>
+    <header class="titulo">
+        <img src="assets/Logo-removebg-preview.png" alt="logo-edemco" style="height: 100px">
+    </header>
+    <h2 class="descripcion mt-4">HISTORICO POR PLANTAS</h2>
+    <div class="selector mt-3">
+        <div class="row">
+            <div class="col-3">
+                <select name="cliente" id="seleccionar-cliente">
+                    <option disabled selected value=""><b>SELECCIONE UN CLIENTE</b></option>
+                </select>
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" id="fecha" placeholder="AAAA">
+            </div>
+        </div>
+    </div>    
+    <button class="btnBuscar btn btn-primary mt-3" id="buscar-button"><b>Buscar</b></button>    
+    <table class="tabla mt-3" id="tablaCliente">
+        <thead>
+            <th scope="col">Mes</th>
+            <th scope="col">Generación</th>
+            <th scope="col">Generación acumulada</th>
+            <th scope="col">Valor KWh</th>
+            <th scope="col">Valor total</th>
+            <th scope="col">Tarifa OR</th>
+            <th scope="col">Tarifa edemco</th>
+            <th scope="col">Diferencia tarifa</th>
+            <th scope="col">Ahorro actual</th>
+            <th scope="col">Ahorro acumulado</th>
+            <th scope="col">Ahorro CO2</th>
+            <th scope="col">Acumulado CO2</th>
+        </thead>
+        <tbody>
+            <!-- Aquí se cargarán los datos del cliente seleccionado -->
+        </tbody>
+    </table>
+    <div class="btn-back">
+        <button onclick="goBack()"><img src="assets/chevron-left.svg" alt="atras" style="height: 2rem;"></button>
+    </div>
+</body>
+</html>

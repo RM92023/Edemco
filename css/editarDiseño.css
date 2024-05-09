@@ -1,0 +1,118 @@
+.titulo {
+    padding: 2px 90px;
+    background-color: #F8F9FA;
+    color: white;
+}
+.descripcion{
+    text-align: center;
+    color: #D9D9D9;
+}
+
+#seleccionar-cliente {
+    width: 250px; 
+    padding: 10px; 
+    font-size: 16px; 
+    text-align: center;
+    border: 2px solid #A6A6A6; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: #A6A6A6; 
+    cursor: pointer; 
+    margin-left: 700px;
+}
+
+.btnBuscar {
+    background: linear-gradient(#7CB05E,#8DC63F);
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnBuscar:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+.btn-back button{
+
+    position: fixed;
+    background-color: #D9D9D9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    text-align: center;
+    border: #D9D9D9;
+    margin-top: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+    bottom: 40px;
+    z-index: 999;
+}
+
+.btn-back button:hover{
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+.btnEditar {
+    background: linear-gradient(#7CB05E,#8DC63F);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 8px;
+    align-items: center;
+    border: none;
+}
+
+.btnEditar:hover {
+    background: linear-gradient(#0097B2,#0CC0DF);
+}
+
+.card{
+    width: 190px;
+    text-align: center;
+    margin: 50px;
+    color: #A6A6A6;
+    font-size: 8px;
+    margin: 50px 50px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 767px) {
+
+    .descripcion{
+        margin-left: 10px;
+    }
+    #seleccionar-cliente {
+      width: 300px;
+      margin-left: 810px;
+    }
+  
+    .btnBuscar {
+      width: 200px;
+      margin-left: 860px;
+    }
+
+    .card {
+        flex: 0 0 calc(20% - 50px);
+        margin: 20px; 
+    }
+  
+}
+
+@media(max-width: 1880px){
+    .descripcion{
+        margin-left: 15PX;
+    }
+    #seleccionar-cliente {
+        width: 300px;
+        margin-left: 615px;
+    }
+      .btnBuscar {
+        width: 200px;
+        margin-left: 665px;
+    }
+}

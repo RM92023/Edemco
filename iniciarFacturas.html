@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar factura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/iniciarFacuras.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/iniciarFacturas.js"></script>
+</head>
+<body>
+    <header class="titulo">
+        <img src="assets/Logo-removebg-preview.png" alt="logo-edemco" style="height: 100px">
+    </header>
+    <h2 class="descripcion mt-5">INICIAR FACTURACIÓN</h2>
+    <div class="flex">
+        <button class="btn text-white" id="btn-iniciar" type="submit"><b>INICIAR FACTURACIÓN DE TODOS LOS CLIENTES</b>
+            <span class="tooltip"><b>Se realizará la facturación del mes en curso para todos los clientes</b></span>
+        </button> 
+    </div>
+    <div class="btn-back">
+        <button onclick="goBack()"><img src="assets/chevron-left.svg" alt="atras" style="height: 2rem;"></button>
+    </div>
+</body>
+</html>
