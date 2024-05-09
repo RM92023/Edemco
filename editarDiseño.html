@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Editar diseño</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/editarDiseño.css">
 </head>
@@ -13,7 +12,7 @@
         <img src="assets/Logo-removebg-preview.png" alt="logo-edemco" style="height: 100px">
     </header>
     <h2 class="descripcion mt-4">EDITAR DISEÑO</h2>
-    <div class="selector mt-3">
+    <div class="selector">
         <div class="row">
             <div class="col-3">
                 <select name="cliente" id="seleccionar-cliente">
@@ -22,80 +21,84 @@
             </div>
         </div>
     </div>    
-    <button class="btnBuscar btn btn-primary mt-3" id="buscar-button"><b>Buscar</b></button>
+    <button class="btnBuscar" id="buscar-button"><b>Buscar</b></button>
     <div class="btn-back">
         <button onclick="goBack()"><img src="assets/chevron-left.svg" alt="atras" style="height: 2rem;"></button>
     </div>
-    <section class="flex-container mt-4">
+    <section class="flex-container">
         <div class="card" id="generacion-card">
-            <h5 class="card-header">Generación</h5>
+            <p class="card-header">Generación</p>
             <div class="card-body">
-                <h5 class="card-title" id="generacion-value"></h5>
+                <p class="card-title" id="generacion-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
+
         <div class="card" id="generacionAcum-card">
-            <h5 class="card-header">Generación acumulada</h5>
+            <p class="card-header">Generación acumulada</p>
             <div class="card-body">
-                <h5 class="card-title" id="generacionAcum-value"></h5>
+                <p class="card-title" id="generacionAcum-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
+
         <div class="card" id="valor-card">
-            <h5 class="card-header">Valor KWh</h5>
+            <p class="card-header">Valor KWh</p>
             <div class="card-body">
-                <h5 class="card-title" id="valor-value"></h5>
+                <p class="card-title" id="valor-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
+
         <div class="card" id="valorTotal-card">
-            <h5 class="card-header">Valor total</h5>
+            <p class="card-header">Valor total</p>
             <div class="card-body">
-                <h5 class="card-title" id="valorTotal-value"></h5>
+                <p class="card-title" id="valorTotal-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
+
     </section>
     <section class="flex-container">
         <div class="card" id="ahorro-card">
-            <h5 class="card-header">Ahorro actual</h5>
+            <p class="card-header">Ahorro actual</p>
             <div class="card-body">
-                <h5 class="card-title" id="ahorro-value"></h5>
+                <p class="card-title" id="ahorro-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="ahorroAcum-card">
-            <h5 class="card-header">Ahorro acumulado</h5>
+            <p class="card-header">Ahorro acumulado</p>
             <div class="card-body">
-                <h5 class="card-title" id="ahorroAcum-value"></h5>
+                <p class="card-title" id="ahorroAcum-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="ahorroCO2-card">
-            <h5 class="card-header">Ahorro CO2</h5>
+            <p class="card-header">Ahorro CO2</p>
             <div class="card-body">
-                <h5 class="card-title" id="ahorroCO2-value"></h5>
+                <p class="card-title" id="ahorroCO2-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="acumuladoCO2-card">
-            <h5 class="card-header">Acumulado CO2</h5>
+            <p class="card-header">Acumulado CO2</p>
             <div class="card-body">
-                <h5 class="card-title" id="acumuladoCO2-value"></h5>
+                <p class="card-title" id="acumuladoCO2-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
@@ -104,36 +107,36 @@
     </section>
     <section class="flex-container">
         <div class="card" id="codigoCufe-card">
-            <h5 class="card-header">Código cufe</h5>
+            <p class="card-header">Código cufe</p>
             <div class="card-body">
-                <h5 class="card-title" id="codigoCufe-value"></h5>
+                <p class="card-title" id="codigoCufe-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="fechaVen-card">
-            <h5 class="card-header">Fecha vencimiento</h5>
+            <p class="card-header">Fecha vencimiento</p>
             <div class="card-body">
-                <h5 class="card-title" id="fechaVen-value"></h5>
+                <p class="card-title" id="fechaVen-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="fechaDIAN-card">
-            <h5 class="card-header">Fecha aceptación DIAN</h5>
+            <p class="card-header">Fecha aceptación DIAN</p>
             <div class="card-body">
-                <h5 class="card-title" id="fechaDIAN-value"></h5>
+                <p class="card-title" id="fechaDIAN-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>
             </div>
         </div>
         <div class="card" id="Nfactura-card">
-            <h5 class="card-header">Factura N°</h5>
+            <p class="card-header">Factura N°</p>
             <div class="card-body">
-                <h5 class="card-title" id="Nfactura-value"></h5>
+                <p class="card-title" id="Nfactura-value"></p>
             </div>
             <div class="card-footer">
                 <button class="btnEditar" id="btn-editar" type="submit"><img src="assets/pencil-square.svg" alt=""></button>

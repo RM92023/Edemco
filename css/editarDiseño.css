@@ -3,6 +3,11 @@
     background-color: #F8F9FA;
     color: white;
 }
+
+.titulo img{
+    width: 15%;
+}
+
 .descripcion{
     text-align: center;
     color: #D9D9D9;
@@ -28,10 +33,11 @@
     width: 150px;
     border: none;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .btnBuscar:hover{
-    background: linear-gradient(#0097B2,#0CC0DF);
+    background: linear-gradient(#9ac306,#80df0c);
 }
 
 .btn-back button{
@@ -50,7 +56,7 @@
 }
 
 .btn-back button:hover{
-    background: linear-gradient(#0097B2,#0CC0DF);
+    background: linear-gradient(#9ac306,#80df0c);
 }
 
 .btnEditar {
@@ -63,22 +69,65 @@
 }
 
 .btnEditar:hover {
-    background: linear-gradient(#0097B2,#0CC0DF);
+    background: linear-gradient(#9ac306,#80df0c);
 }
 
-.card{
-    width: 190px;
-    text-align: center;
-    margin: 50px;
-    color: #A6A6A6;
-    font-size: 8px;
-    margin: 50px 50px;
+.card-body i {
+    font-size: 60px;
+    color: #7CB05E;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px; /* Espacio entre filas */
+}
+
+.card {
+    width: 20%;
+    margin: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
 
 .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+section p{
+    font-size: 18px;
 }
 
 @media (min-width: 767px) {
