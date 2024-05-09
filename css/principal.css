@@ -1,78 +1,101 @@
-.titulo {
-    padding: 2px 90px;
-    background-color: #F8F9FA;
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.descripcion{
-    text-align: center;
-    color: #D9D9D9;
+body{
+    background:rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    width: 100%;
+    background-color: #F8F9FA;
+}
+
+.titulo img {
+    width: 15%;
+    margin-left: 20px;
 }
 
 .btn {
-    background: linear-gradient(#7CB05E,#8DC63F);
+    background: linear-gradient(#7CB05E, #8DC63F);
     cursor: pointer;
     font-size: 14px;
-    padding: 2.5px 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: 1px solid #7CB05E;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 .btn:hover {
-    background: linear-gradient(#0097B2,#0CC0DF);
+    background: transparent;
+    border: 1px solid #7CB05E;
+    color: #8DC63F;
+    transition: 0.5s ease;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: center;
+.card-body i {
+    font-size: 60px;
+    color: #7CB05E;
 }
 
-.flex-containertwo {
+.container {
     display: flex;
-    flex-wrap: nowrap; 
-    justify-content: center;
-}
-
-.flex-containerthree {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px; /* Espacio entre filas */
 }
 
 .card {
-    
-    box-sizing: border-box;
+    width: 20%; /* Tres tarjetas por fila con margen entre ellas */
+    margin: 32px; /* Espacio entre tarjetas */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.btn-back button{
+.card:hover {
+    transform: translateY(-5px);
+}
 
-    position: fixed;
-    background-color: #D9D9D9;
-    padding: 10px 10px;
-    border-radius: 50%;
+.card-header{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     text-align: center;
-    border: #D9D9D9;
-    margin-top: 150px;
-    margin-left: 50px;
-    cursor: pointer;
+    font-size: 20px;
+}
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-back button {
+    position: fixed;
     bottom: 40px;
+    left: 20px; /* Ajusta según necesites */
+    color: #7CB05E; /* Color del texto */
+    border: none;
+    background: none;
+    padding: 15px; /* Ajusta el tamaño del botón */
+    font-size: 35px; /* Tamaño del icono */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-.btn-back button:hover{
-    background: linear-gradient(#0097B2,#0CC0DF);
-}
-
-@media (min-width: 767px) {
-
-    .card {
-        flex: 0 0 calc(20% - 50px);
-        margin: 30px; 
-    }
-  
-}
-
-@media(max-width: 1880px){
-    .card {
-        flex: 0 0 calc(33.333% - 200px);
-        margin: 10px; 
-    }
+.btn-back button:hover {
+    font-size: 40px;
+    transition: 0.2s ease;
 }
