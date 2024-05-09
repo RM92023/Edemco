@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Principal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="css/principal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <header class="titulo">
-        <img src="assets/Logo-removebg-preview.png" alt="logo-edemco" style="height: 100px">
+        <img src="assets/Logo-removebg-preview.png" title="logo-edemco">
     </header>
-    <section class="flex-container mt-4">
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Iniciar facturación</div>
-            <div class="card-body">
-                <img src="assets/file-earmark-medical.svg" alt="file" style="height: 3.5rem;"> 
+    <main>
+        <section class="container">
+            <div class="card text-center">
+                <div class="card-header">Iniciar facturación</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-iniciar" type="submit">Iniciar factura</button>
+                </div>
             </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-iniciar" type="submit">Iniciar factura</button>
+
+            <div class="card text-center">
+                <div class="card-header">Editar diseños</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-file-pen"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-editar" type="submit">Editar diseños</button>
+                </div>
             </div>
-        </div>
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Editar diseños</div>
-            <div class="card-body">
-                <img src="assets/file-earmark-medical-fill.svg" alt="file" style="height: 3.5rem;"> 
+
+            <div class="card text-center">
+                <div class="card-header">Cargue de archivos</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-carga-archivos" type="submit">Cargue de archivos</button>
+                </div>
             </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-editar" type="submit">Editar diseños</button>
+            
+            <div class="card text-center">
+                <div class="card-header">Histórico de facturas</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-historico-facturas" type="submit">Historico de facturas</button>
+                </div>
             </div>
-        </div>   
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Cargue de archivos</div>
-            <div class="card-body">
-                <img src="assets/file-earmark-zip-fill.svg" alt="file" style="height: 3.5rem;"> 
+            <div class="card text-center">
+                <div class="card-header">Visualización de archivos</div>
+                <div class="card-body">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-visualizacion" type="submit">Visualización</button>
+                </div>
             </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-carga-archivos" type="submit">Cargue de archivos</button>
+            <div class="card text-center">
+                <div class="card-header">Facturación especial</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-factura-especial" type="submit">Facturación especial</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="flex-containertwo">
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Histórico de facturas</div>
-            <div class="card-body">
-                <img src="assets/search.svg" alt="file" style="height: 3.5rem;"> 
+
+            <div class="card text-center">
+                <div class="card-header">Histórico por planta</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-note-sticky"></i>
+                </div>
+                <div class="card-footer">
+                    <button class="btn" id="btn-historico-plantas" type="submit">Histórico por planta</button>
+                </div>
             </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-historico-facturas" type="submit">Historico de facturas</button>
-            </div>
-        </div>  
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Visualización de archivos</div>
-            <div class="card-body">
-                <img src="assets/eye.svg" alt="file" style="height: 3.5rem;"> 
-            </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-visualizacion" type="submit">Visualización</button>
-            </div>
-        </div>  
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Facturación especial</div>
-            <div class="card-body">
-                <img src="assets/exclamation-circle.svg" alt="file" style="height: 3.5rem;"> 
-            </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-factura-especial" type="submit">Facturación especial</button>
-            </div>
-        </div> 
-    </section>
-    <section class="flex-containerthree">
-        <div class="card text-center w-25 mx-auto">
-            <div class="card-header">Histórico por planta</div>
-            <div class="card-body">
-                <img src="assets/search.svg" alt="file" style="height: 3.5rem;">
-                <img src="assets/currency-dollar.svg" alt="file" style="height: 3.5rem;">  
-            </div>
-            <div class="card-footer">
-                <button class="btn text-white" id="btn-historico-plantas" type="submit">Histórico por planta</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
     <div class="btn-back">
-        <button onclick="goBack()"><img src="assets/chevron-left.svg" alt="atras" style="height: 2rem;"></button>
+        <button onclick="goBack()"><i class="fa-solid fa-angle-left"></i></button>
     </div>
     <script>
         const btnIniciar = document.getElementById('btn-iniciar');
@@ -94,32 +98,33 @@
         const btnVisualizacion = document.getElementById('btn-visualizacion');
         const btnFacturaEspecial = document.getElementById('btn-factura-especial');
 
-        btnIniciar.addEventListener('click', function() {
+        btnIniciar.addEventListener('click', function () {
             window.location.href = "iniciarFacturas.html";
         });
-        btnEditar.addEventListener('click', function() {
+        btnEditar.addEventListener('click', function () {
             window.location.href = 'editarDiseño.html';
         });
-        btnHistoricoFacturas.addEventListener('click', function() {
+        btnHistoricoFacturas.addEventListener('click', function () {
             window.location.href = 'historicoFacturas.html';
         });
-        btnHistoricoPlantas.addEventListener('click', function() {
+        btnHistoricoPlantas.addEventListener('click', function () {
             window.location.href = 'historicoPlantas.html';
         });
-        btnCargaArchivos.addEventListener('click', function() {
+        btnCargaArchivos.addEventListener('click', function () {
             window.location.href = 'cargarArchivos.html';
         });
-        btnVisualizacion.addEventListener('click', function() {
+        btnVisualizacion.addEventListener('click', function () {
             window.location.href = 'visualizacion.html';
         });
-        btnFacturaEspecial.addEventListener('click', function() {
+        btnFacturaEspecial.addEventListener('click', function () {
             window.location.href = 'facturacionEspecial.html';
         });
 
         function goBack() {
             window.history.back();
         }
-        
+
     </script>
 </body>
+
 </html>
